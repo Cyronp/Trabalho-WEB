@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    color: white;
+}
+  
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1e1e1e;
+}
+  
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+  
+h1 {
+    text-align: center;
+}
+
+.jogo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+  
+.jogo button {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 50px;
+    background: #252526;
+    color: #ffffff;
+}
