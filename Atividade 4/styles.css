@@ -1,0 +1,11 @@
+.novo-comentario {
+    background-color: #d1e7dd;
+    border-left: 4px solid #0f5132; 
+    margin-bottom: 0.5rem;
+}
+
+.antigo-comentario {
+    background-color: #d6d8ff; 
+    border-left: 4px solid #4852d4; 
+    margin-bottom: 0.5rem;
+}
