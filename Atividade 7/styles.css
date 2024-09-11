@@ -1,21 +1,111 @@
-*{
+:root {
+    --color-dark: rgb(14, 14, 14);
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container{
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-dark) !important;
+    color: white !important;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.box {
+    background-color: rgb(22, 22, 22);
+    width: 500px;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+label {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+#task {
+    height: 40px;
+    width: calc(100% - 50px);
+    border: none;
+    border-radius: 20px;
+    padding: 0 10px;
+}
+
+button, #submit {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover, #submit:hover {
+    background-color: #9ddc9d;
+}
+
+.container {
     display: flex;
     justify-content: center;
-    position: absolute;
+    align-items: center;
+    height: 100vh;
 }
 
-p{
-    font-size: large;
-    font-family: Arial, Helvetica, sans-serif;
+ul {
+    list-style: none;
+    padding: 0;
 }
 
-input{
+li {
+    margin-top: 10px;
+    margin-right: 30px;
+    padding: 10px;
+    background-color: var(--color-dark);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    color: white;
+    text-transform: capitalize;
+}
+
+#remover {
+    background-color: red;
     border: none;
-    
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#remover:hover {
+    background-color: #e74c3c;
 }
