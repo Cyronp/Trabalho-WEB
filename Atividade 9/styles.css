@@ -41,6 +41,7 @@ button.login {
     display: flex;
     flex-direction: column;
     width: 90%;
+    position: relative;
     max-width: 400px;
     background-color: rgb(204, 204, 204);
     padding: 20px;
@@ -87,10 +88,14 @@ button[type="submit"] {
 
 .hide{
     opacity: 0;
-    transition: 1s;
+    transform: scale(0) skewY(15deg) ;
+    transform: translateY(-50%);
+    transition: 0.7s;
 }
 
 .show{
     opacity: 1;
+    transform: scale(1);
     transition: 1s;
+    transform: translate(0px);
 }
