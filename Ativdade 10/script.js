@@ -1,14 +1,14 @@
-const ctx = document.getElementById('myChart').getContext('2d');
+const ctx = document.getElementById('tabela').getContext('2d');
 
-const myChart = new Chart(ctx, {
+const ctabela = new Chart(ctx, {
     type: 'bar',
     data: {
         labels: [],
         datasets: [{
             label: 'Valores',
             data: [],
-            backgroundColor: 'rgba(75, 192, 192, 0.2)',
-            borderColor: 'rgba(75, 192, 192, 1)',
+            backgroundColor: 'rgba(20, 255, 150, 0.3)',
+            borderColor: 'rgba(20, 255, 120, 1)',
             borderWidth: 1
         }]
     },
@@ -26,9 +26,9 @@ function addData() {
     const value = parseFloat(document.getElementById('value').value);
 
     if (label && !isNaN(value)) {
-        myChart.data.labels.push(label);
-        myChart.data.datasets[0].data.push(value);
-        myChart.update();
+        ctabela.data.labels.push(label);
+        ctabela.data.datasets[0].data.push(value);
+        ctabela.update();
         
         document.getElementById('label').value = '';
         document.getElementById('value').value = '';
