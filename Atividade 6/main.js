@@ -1,5 +1,3 @@
-// script.js
-
 document.addEventListener('DOMContentLoaded', function() {
     const links = document.querySelectorAll('nav a');
 
@@ -12,8 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (targetElement) {
                 targetElement.scrollIntoView({
-                    behavior: 'smooth', 
-                    block: 'start' 
+                    behavior : "smooth",
                 });
             }
         });
