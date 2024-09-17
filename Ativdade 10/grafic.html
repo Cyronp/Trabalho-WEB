@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico Interativo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Gráfico Interativo</h1>
+        <div class="input-group">
+            <input type="text" id="label" placeholder="Nome do item">
+            <input type="number" id="value" placeholder="Valor">
+            <button onclick="addData()">Adicionar</button>
+        </div>
+        <canvas id="myChart"></canvas>
+    </div>
+</body>
+</html>
